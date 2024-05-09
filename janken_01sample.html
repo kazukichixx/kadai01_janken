@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/janken tpl.css">
+    <title>じゃんけんゲーム</title>
+    <style>
+        .kasaneru{
+            margin-top: 30px;
+            text-align: center;
+            font-size: large;
+        }
+        .fild{
+            margin-top: 30px;
+            text-align: center;
+            font-size: large;
+        }
+        .naraberu{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="kasaneru">
+        <img src="img/素材①−1.png">
+        <p>じゃんけんゲーム</p>
+        
+    </div>
+        <br>
+        <div class="fild">
+        <p>コンピューター：<span id="com"></span></p>
+        <p>結果：<span  id="result"></span></p>
+        <p>あなた：<span id="me"></span></p>
+        </div>
+
+        <div class="naraberu">
+        <input type="image" src="img/図1.png" value="グー" onclick="judge(0)">
+        <input type="image" src="img/図2.png" value="チョキ" onclick="judge(1)">
+        <input type="image" src="img/図3.png" value="パー" onclick="judge(2)">
+        </div>
+    
+        <script src="./js/01sample.js"></script>
+</body>
+</html>    
+
+
+
